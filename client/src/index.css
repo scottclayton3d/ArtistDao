@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+    font-family: 'Space Grotesk', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Outfit', sans-serif;
+    @apply font-bold tracking-tight;
+  }
+
+  .font-heading {
+    font-family: 'Outfit', sans-serif;
+  }
+
+  .gradient-text {
+    @apply bg-gradient-to-r from-primary to-pink-400 bg-clip-text text-transparent;
+  }
+
+  .text-glow {
+    text-shadow: 0 0 8px rgba(255, 0, 128, 0.4);
+  }
+
+  .btn-hover-effect {
+    @apply transition-all duration-300 ease-in-out transform hover:scale-105;
+  }
+  
+  .border-glow {
+    box-shadow: 0 0 15px rgba(255, 0, 128, 0.4);
+  }
+}
